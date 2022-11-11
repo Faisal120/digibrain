@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="taupex"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <RelativeLayout
+        android:id="@+id/welRelative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/inGrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_account_balance_24"
+            android:drawablePadding="14dp"
+            android:paddingLeft="8dp"
+            android:text="Incredit Group"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/issueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inGrp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="14dp"
+            android:text="Invoice issues"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/view1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/grey"
+            android:text="24.08.2018"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/issueDate"
+            android:layout_margin="8dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/paymentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="8dp"
+            android:drawablePadding="14dp"
+            android:text="Payment date"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/view2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/grey"
+            android:text="31.09.2018"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/paymentDate"
+            android:layout_margin="8dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/benefciary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:layout_marginLeft="8dp"
+            android:drawablePadding="14dp"
+            android:text="Benefieciary"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/view3"
+            android:layout_below="@id/view2"
+            android:layout_toRightOf="@id/benefciary"
+            android:layout_marginRight="8dp"
+            android:text="Swedbark AS, kods HABA LV22 LV21HABA000140832543 "
+            android:textAlignment="center"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/benefciary"
+            android:layout_margin="8dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="14dp"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:text="Invoice nr. 401241245667"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/desc"
+            android:layout_margin="8dp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="14dp"
+            android:text="Total amount"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:text="251.90 $"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_below="@id/totalAmount"
+            android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_payList"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="14dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bgbtn"
+            android:text="Add to Pay-List"
+            android:textColor="@color/darkBlue" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_payNow"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_below="@id/totalAmount"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@id/btn_payList"
+            android:background="@drawable/bgbtn2"
+            android:layout_marginLeft="8dp"
+            android:textAllCaps="false"
+            android:text="Pay now"
+            android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welRelative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="This application allows you to pay bills in one place."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/facebook_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt_des"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bgbtnfb"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/fb" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Facebook"
+            android:textColor="@color/white"
+            android:textFontWeight="600"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/googleLay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/facebook_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtngoogle">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/google"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            android:layout_gravity="center_vertical"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/googleLay"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgbtnemail">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_email_24"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:layout_gravity="center_vertical"
+            android:textFontWeight="600"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/darkBlue"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="By logging into account you are agreeing with our Terms &amp; conditions and Privacy Policy"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+</RelativeLayout>

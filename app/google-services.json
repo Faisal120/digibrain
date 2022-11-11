@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384994952845",
+    "project_id": "digital-brain-media",
+    "storage_bucket": "digital-brain-media.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384994952845:android:e2eb6a9ab0ddaa32fe44c4",
+        "android_client_info": {
+          "package_name": "com.example.digibrainmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384994952845-eeae7q0g6bqkr8147ec1k1gv3k87uoot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD_uJBwkwxB67LNGLZP3YUIvw47f_ZUNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384994952845-eeae7q0g6bqkr8147ec1k1gv3k87uoot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
